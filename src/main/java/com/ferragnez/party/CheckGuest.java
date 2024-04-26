@@ -5,9 +5,6 @@ import java.util.Scanner;
 
 public class CheckGuest {
 
-	/**
-	 * @param args
-	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		System.out.println("Venbenuti alla festa");
@@ -38,37 +35,33 @@ public class CheckGuest {
 			
 			//asegno la iterazione alla variabile di controlo
 			String ospitiCorrente = ospiti[i];
-//			System.out.println(ospiti[i]);
-//			System.out.println(ospitiCorrente);
 
-
-		//CREO UN CILO PRE CONTOLO DEL NOME DEL OSPITE
-//con una condizionale rispondo se il ospite puo participare alla festa o pure no
-			
 			//SE "ospite corrente" è  ugulae a "nome"
 			if(ospitiCorrente.equals(nome)) {
 				//"ospite trovato" asegno "true"
 				ospiteTrovato = true;
-				
-				//SE "ospite trovato" è "true" 
-				if(ospiteTrovato == true) {
-					//acolgo il ospite alla festa
-					System.out.println("Benvenuto alla festa " + nome);
-					
-				
-					
-				 //ALTRIMENTI 
-				}else{
-					//avios alla presona che non puo partecipare alla festa
-					System.out.println("Ci dispiace " + nome + " non puoi partecipare alla festa");
-					
-					break;
-				}
-		}
-			
-			
-				
+		
 			}
+		
+		}
+		//CREO UN CILO PRE CONTOLO DEL NOME DEL OSPITE
+		//con una condizionale rispondo se il ospite puo participare alla festa o pure no
+					
+						
+			//SE "ospite trovato" è "true" 
+			if(ospiteTrovato) {
+				//acolgo il ospite alla festa
+				System.out.println("Benvenuto alla festa " + nome);
+							
+			 //ALTRIMENTI 
+			}else{
+				//avios alla presona che non puo partecipare alla festa
+				System.out.println("Ci dispiace " + nome + " non puoi partecipare alla festa");
+							
+			}
+			
+			
+				
 
 	}
 
