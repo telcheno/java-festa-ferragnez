@@ -72,7 +72,7 @@ public class CheckGuest {
 			String testo2 = "casa";
 			System.out.println(testo2);
 			
-			String testo3 = "cena";
+			String testo3 = "Cena";
 			System.out.println(testo3);
 			
 			String testo4 = "lato";
@@ -109,6 +109,11 @@ public class CheckGuest {
 			System.out.println(testo1.compareTo(testo3));//il risultato sara -0 opure +0
 			System.out.println(testo1);
 			System.out.println(testo3);
+			System.out.println("Il risultato sara -0 opure +0 perche l'ordine alfabetico non corrispondono \n");
+
+			System.out.println(testo1.compareTo(testo4));//il risultato sara -0 opure +0
+			System.out.println(testo4);
+			System.out.println(testo1);
 			System.out.println("Il risultato sara -0 opure +0 perche l'ordine alfabetico non corrispondono \n");
 			
 			
