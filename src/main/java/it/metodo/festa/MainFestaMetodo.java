@@ -11,17 +11,22 @@ public class MainFestaMetodo {
 		//importo il metodo scanner
 		Scanner input = new Scanner(System.in);
 		
+		//stansio il costruttore per il controllo
 		Controllo controllo = new Controllo();
 		
+		//chiedo al utente il nome da controllare
 		System.out.println("Inserisci il tuop nome!");
-//		String nome = input.next()
 		
+		//asegno il nome del utente alla variabile del costrutore
 		controllo.nome = input.nextLine();
-		System.out.println(controllo.nome);
-//		controllo.ospiti = input.nextLine();
-		System.out.println(controllo.ospiti);
-		System.out.println(controllo.ospiteInvitato);
-
+//		System.out.println(controllo.nome);
+//		System.out.println(controllo.ospiti);
+		
+		//inboco il metodo che controlla il utente
+		controllo.controloNome();
+		
+		
+		
 	}
 
 }

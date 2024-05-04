@@ -12,21 +12,41 @@ public class Controllo {
 			"Bebe Vio", "Luis", "Pardis Zarei", 
 			"Martina Maccherone", "Rachel Zeilic" }; 
 	
-	//variabile di controllo de gli ospiti
-	Boolean ospiteInvitato = false;
+	//creo variabile per il controllo 
+	Boolean ospiteTrovato = false;
 	
-//	creo il metodo per controlare
-	String ospitiTrovato() {
-		//con un ciclo for controlo se il nome del ospite e nel array
+	//creo il metodo per il controllo  
+	public void controloNome() {
+		
+		//uso il ciclo for per controllare il nome nel array
 		for(int i = 0; i < ospiti.length; i++) {
-					
-		//asegno la iterazione alla variabile di controlo
-		String ospitiCorrente = ospiti[i];
-
-		//SE "ospite corrente" è  ugulae a "nome"
-		if(ospitiCorrente.equals(nome)) {
-		//"ospite trovato" asegno "true"
-		ospiteInvitato = true;
+			
+			//asegno il nome del ciclo alla variabile di controllo
+			String ospiteCorrente = ospiti[i];
+			
+		//uso una condisionale per controllo del nome nel array
+			//SE ospite corrente è uguale a nome
+			if(ospiteCorrente.equals(nome)) {
+				
+				//asegno true alla variabile di controllo
+				ospiteTrovato = true;
+				
+			}
 		}
+		
+	//con una condizionale rispondo se il ospite puo participare alla festa o pure no
+		
+		//SE "ospite trovato" è "true" 
+		if(ospiteTrovato) {
+			//acolgo il ospite alla festa
+			System.out.println("Benvenuto alla festa \n" + nome  + "\n");
+		//ALTRIMENTI
+		}else {
+			//avios alla presona che non puo partecipare alla festa
+			System.out.println("Ci dispiace " + nome + " non puoi partecipare alla festa \n");
+		}
+		
+
 	}
+	
 }
